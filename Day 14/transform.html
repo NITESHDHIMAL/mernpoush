@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 250px;
+            width: 250px;
+            background-color: green;
+        }
+        .child{
+            height: 250px;
+            width: 250px;
+            background-color: lightpink;
+            transition:all 1s;
+            font-size: 4rem;
+            text-align: center;
+            align-content: center;
+        }
+        .child:hover{
+            /* transform:rotate(45deg); */
+            /* transform:rotateX(45deg); */
+            /* transform:rotateY(45deg); */
+            /* transform:rotateY(360deg); */
+
+            /* transform: skew(45deg); */
+            /* transform: skewX(45deg); */
+            /* transform: skewY(45deg); */
+
+            /* transform: scale(2); */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+
+            transform: translate(250px, 250px); 
+        }
+
+
+        img{
+            animation: rotateimage 10s infinite linear ; 
+        }
+
+        @keyframes rotateimage {
+            to{
+                transform:rotate(360deg) ;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="parent">
+        <div class="child">
+            animation
+        </div>
+    </div>
+
+
+    <img src="https://themewagon.github.io/restoran/img/hero.png" width="400" alt="rotateimage">
+
+</body>
+</html>
