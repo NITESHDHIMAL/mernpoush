@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: green;
+
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+
+        justify-content: center;
+        gap: 2rem;
+      }
+      .child {
+        height: 250px;
+        width: 250px;
+        border: 2px solid white;
+      }
+
+      /* @media (max-width:768px) {
+        .container{
+            background-color: blue;
+        }
+      } */
+      @media (min-width: 768px) {
+        .container {
+          background-color: blue;
+          grid-template-columns: repeat(3, 250px);
+        }
+      }
+
+      /* landscape => laptop => width > height
+      portrait => phone => height > width */
+
+      /* @media (orientation:landscape ) {
+        .container{
+            background-color: blue;
+        }
+      } */
+      @media (orientation: portrait) {
+        .container {
+          background-color: blue;
+          grid-template-columns: repeat(2, 250px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
