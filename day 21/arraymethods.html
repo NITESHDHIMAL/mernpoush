@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // const numbers = [1, 2, 3, 4, 5, 6 ];
+      // const doubled = numbers.map( naasdfasdf => naasdfasdf *2);
+      // console.log(doubled);
+      // console.log(numbers);
+
+      // const found = numbers.find( n => n > 4 )
+      // console.log(found)
+
+    //   const course = [
+    //     {
+    //       name: "Python",
+    //       duration: "2.5 months",
+    //       price: 9000,
+    //     },
+    //     {
+    //       name: "React",
+    //       duration: "2.5 months",
+    //       price: 25000,
+    //     },
+    //     {
+    //       name: "Java",
+    //       duration: "2 months",
+    //       price: 24000,
+    //     },
+    //     {
+    //       name: "MERN",
+    //       duration: "3 months",
+    //       price: 18000,
+    //     },
+    //   ];
+
+    //   const foundCourse = course.find((course) => course.name === "MERN");
+    //   const foundCourse = course.find((course) => course.price >= 18000);
+    //   const foundCourse = course.find(course => course.price <= 9000);
+
+    //   const foundCourse = course.findIndex(course => course.price <= 9000);
+    //   const foundCourse = course.findIndex(course => course.name === "java");
+    //   const foundCourse = course.findIndex(course => course.name == "java");
+    //   const foundCourse = course.findIndex(course => course.name === "Graphic Design");
+    //   console.log(foundCourse);
+
+
+    // const filterCourse = course.filter( course => course.price <= 18000)
+    // console.log(filterCourse)
+
+    // const Auser = { name: 'Anita'};
+    // const Buser = {name: 'Binita'};
+    // const users = [Auser];
+
+    // console.log(users.includes(Auser))
+    // console.log(users.includes(Buser))
+
+    const user = [
+        {
+            name: "Unish",
+            role: "Admin"
+        },
+        {
+            name: "Binita",
+            role: "Admin"
+        },
+        {
+            name: "Anish",
+            role: "Manager"
+        },
+        {
+            name: "Kapil",
+            role: "Manager"
+        },
+        {
+            name: "Bhumika",
+            role: "Subadmin"
+        },
+        {
+            name: "Sahil",
+            role: "CEO"
+        },
+    ]
+
+    // const hasAdmin = user.some( user => user.role === "staff" );
+    // const hasAdmin = user.some( user => user.role === "Admin" );
+    const hasAdmin = user.some( user => user.role === "Manager" );
+    console.log(hasAdmin)
+
+
+
+
+    </script>
+  </body>
+</html>

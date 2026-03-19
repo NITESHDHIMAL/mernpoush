@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: rgb(75, 75, 241);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 1rem;
+        }
+
+        form{
+            border: 2px solid gray;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        input{
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        #form{
+            background: rgb(169, 236, 169);
+        }
+    </style>
+</head>
+<body> 
+
+    <!-- <button onclick="eventCall()">click me</button> -->
+    <!-- <button oncontextmenu="eventCall()">click me</button> -->
+    <!-- <button ondblclick="eventCall()">click me</button> -->
+    <!-- <button onmousedown="eventCall()">click me</button> -->
+    <!-- <button onmouseup="eventCall()">click me</button> -->
+   
+    <!-- <button onmouseenter="eventCall()">click me</button> -->
+    <!-- <button onmouseleave="eventCall()">click me</button> -->
+    <!-- <button onmouseover="eventCall()">click me</button> -->
+    <!-- <button onmouseout="eventCall()">click me</button> -->
+    <!-- <button onmousemove="eventCall()">click me</button> -->
+    <!-- <button onmousewheel="eventCall()">click me</button> -->
+    
+    
+    <!-- keyboard event  -->
+    <!-- <button onkeydown="eventCall()">click me</button> -->
+     
+
+    <form action="" id="form">
+        <label for="">Onkeydown</label>
+        <input type="text" onkeydown="alert(this.value)" placeholder="Onkeydown"> <br>
+      
+        <label for="">Onkeyup</label>
+        <input type="text" onkeyup="alert(this.value)" placeholder="Onkeyup"> <br>
+        
+        <label for="">Onkeypress</label>
+        <input type="text" onkeypress="alert(this.value)" placeholder="Onkeypress"> <br>
+    </form>
+
+
+    <script>
+        // function eventCall (){
+        //     alert("Event call successfully.")
+        // }
+
+        // eventCall()
+
+    </script>
+</body>
+</html>
